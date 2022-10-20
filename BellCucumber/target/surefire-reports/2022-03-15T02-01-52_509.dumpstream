@@ -1,0 +1,4 @@
+# Created at 2022-03-15T02:01:52.860
+Boot Manifest-JAR contains absolute paths in classpath 'D:\BellIntegrator\BellCucumber\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+

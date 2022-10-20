@@ -1,0 +1,111 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 12,
+        "name": "Сервис яндекса",
+        "description": "",
+        "id": "яндекс;сервис-яндекса;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4057608500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Открыть yandex.ru",
+            "match": {
+              "location": "StepDefinition.openBrowser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 794868900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Клик по иконке яндекс маркет и переход на него",
+            "match": {
+              "location": "StepDefinition.goMarket()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7717468800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Выберем из каталога раздел из левого столбца \u0027Электроника\u0027 и значение \u0027Смартфоны\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Электроника\u0027",
+                  "offset": 45
+                },
+                {
+                  "val": "\u0027Смартфоны\u0027",
+                  "offset": 70
+                }
+              ],
+              "location": "StepDefinition.selectionFromTheCatalog(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@data-zone-data]//legend[text()\u003d\u0027РџСЂРѕРёР·РІРѕРґРёС‚РµР»СЊ\u0027]/parent::fieldset//button[text()\u003d\u0027РџРѕРєР°Р·Р°С‚СЊ РІСЃС‘\u0027]\"} (tried for 4 second(s) with 200 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027COMPUTER\u0027, ip: \u0027192.168.0.111\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.14\u0027\nDriver info: driver.version: unknown\r\n\tat org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat pages.yandex.YandexMarketCatalogPage.chooseManufacturer(YandexMarketCatalogPage.java:35)\r\n\tat tests.steps.StepDefinition.chooseManufacturer(StepDefinition.java:33)\r\n\tat ✽.Выберем производителя: \u0027Apple\u0027(file:src/test/java/tests/features/open.feature:8)\r\n",
+              "duration": 4216135600,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "Выберем производителя: \u0027Apple\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Apple\u0027",
+                  "offset": 23
+                }
+              ],
+              "location": "StepDefinition.chooseManufacturer(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 323600,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "Проверяем, что на всех страницах содержится товар с названием: \u0027Apple\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Apple\u0027",
+                  "offset": 63
+                }
+              ],
+              "location": "StepDefinition.checkTitleProduct(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Run"
+          }
+        ]
+      }
+    ],
+    "name": "Яндекс",
+    "description": "",
+    "id": "яндекс",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/tests/features/open.feature",
+    "tags": []
+  }
+]
